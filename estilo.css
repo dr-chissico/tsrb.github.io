@@ -159,19 +159,27 @@ article p {
 }
 
 .noticia {
+    position: relative; /* Add this line */
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
 .noticia img {
-    max-width: 150px;
-    margin-right: 15px;
+    position: absolute; /* Add this line */
+    top: 0; /* Add this line */
+    left: 0; /* Add this line */
+    width: 100%; /* Add this line */
+    height: auto; /* Add this line */
+    z-index: 1; /* Add this line */
     border-radius: 5px;
 }
 
 .noticia div {
-    flex: 1;
+    position: relative; /* Add this line */
+    z-index: 2; /* Add this line */
+    background: rgba(255, 255, 255, 0.8); /* Add this line for background color */
+    padding: 15px; /* Add this line for padding */
 }
 
 /* Form */
