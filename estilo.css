@@ -1,238 +1,91 @@
-/* General Reset */
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+:root {
+    --cor-de-borda: #e3e5e4;
+    --cor-de-fundo: #c3c7ca;
+    --cor-de-texto: #34444f;
+}
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-/* Carousel */
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-item {
-    display: none;
-    width: 100%;
-    max-width: auto;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.carousel-item.active {
-    display: block;
-    opacity: 1;
-}
-
-.carousel img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    font-size: 2rem;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-}
-
-.carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.carousel-control.prev {
-    left: 10px;
-}
-
-.carousel-control.next {
-    right: 10px;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333; /* Dark gray for text */
-    background-color: #f8f8f8; /* Light cream background */
-}
-
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background-color: #333; /* Dark gray */
-    color: #fff; /* White text */
-    padding: 20px 0;
-}
-
-header h1 {
-    text-align: center;
-    font-size: 2rem;
-}
-
-header nav ul {
-    list-style: none;
+    background-color: #fff;
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: "Lato", sans-serif;
 }
 
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff; /* White links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #d4af37; /* Gold hover effect */
-}
-
-/* Sections */
-.section {
-    padding: 40px 0;
-    background-color: #fff; /* White background for sections */
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.section:nth-child(even) {
-    background-color: #f0f0f0; /* Light gray for alternating sections */
-}
-
-.section h2 {
-    text-align: center;
-    color: #333; /* Dark gray */
-    margin-bottom: 20px;
-}
-
-.section p, .section ul {
-    text-align: left;
-    color: #555; /* Medium gray for text */
-}
-
-.section ul {
-    list-style: none;
+.lista-ordenavel {
+    border: 1px solid var(--cor-de-borda);
+    color: var(--cor-de-texto);
     padding: 0;
+    list-style-type: none;
 }
 
-.section ul li {
-    margin: 10px 0;
-}
-
-/* Articles */
-article {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 5px;
-    background-color: #fff; /* White background */
-}
-
-article h3 {
-    color: #333; /* Dark gray */
-    margin-bottom: 10px;
-}
-
-article p {
-    color: #555; /* Medium gray */
-}
-
-.noticia {
-    position: relative; /* Add this line */
+.lista-ordenavel li {
+    background-color: #fff;
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    flex: 1;
 }
 
-.noticia img {
-    position: absolute; /* Add this line */
-    top: 0; /* Add this line */
-    left: 0; /* Add this line */
-    width: 100%; /* Add this line */
-    height: auto; /* Add this line */
-    z-index: 1; /* Add this line */
-    border-radius: 5px;
+.lista-ordenavel li:not(:last-of-type) {
+    border-bottom: 1px solid var(--cor-de-borda);
 }
 
-.noticia div {
-    position: relative; /* Add this line */
-    z-index: 2; /* Add this line */
-    background: rgba(255, 255, 255, 0.8); /* Add this line for background color */
-    padding: 15px; /* Add this line for padding */
+.lista-ordenavel .numero {
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    height: 60px;
+    width: 60px;
 }
 
-/* Form */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff; /* White background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.lista-ordenavel li.em-cima .arrastavel {
+    background-color: #eaeaea;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333; /* Dark gray */
+.lista-ordenavel .nome-pais {
+    margin: 0 20px 0 0;
 }
 
-form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 5px;
-    font-size: 1rem;
+.lista-ordenavel li.correto .nome-pais {
+    color: #3ae374;
 }
 
-form input:focus, form textarea:focus {
-    border-color: #d4af37; /* Gold focus effect */
-    outline: none;
+.lista-ordenavel li.incorreto .nome-pais {
+color: #ff3838;
 }
 
-form button {
-    background-color: #333; /* Dark gray */
-    color: #fff; /* White text */
-    border: none;
+.arrastavel {
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    flex: 1;
 }
 
-form button:hover {
-    background-color: #d4af37; /* Gold hover effect */
+.botao-checar {
+    background-color: var(--cor-de-fundo);
+    border: none;
+    color: var(--cor-de-texto);
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-/* Footer */
-footer {
-    background-color: #333; /* Dark gray */
-    color: #fff; /* White text */
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+.botao-checar:active {
+    transform: scale(0.98);
 }
 
-footer p {
-    font-size: 0.9rem;
+.botao-checar:focus {
+    outline: none;
 }
