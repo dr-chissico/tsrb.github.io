@@ -107,6 +107,14 @@ header nav ul li a:hover {
     color: #d4af37; /* Gold hover effect */
 }
 
+/* Logotipo */
+.logo {
+    display: block;
+    margin: 20px auto; /* Centraliza horizontalmente */
+    max-width: 150px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção */
+}
+
 /* Sections */
 .section {
     padding: 40px 0;
