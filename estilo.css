@@ -11,11 +11,11 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 200px;
+  height: 15vh;
   /* Fix the height of the carousel images */
   object-fit: cover;
   /* Ensure the images cover the area without distortion */
-  max-width: 300px;
+  max-width: 480px;
   margin: 0 auto;
   /*Center the carousel */
   border-radius: 10px;
@@ -23,7 +23,7 @@
 }
 
 #carousel {
-  padding: 5px 0px 5px 0px;
+  padding: 5px auto 5px auto;
   margin: 0px;
 }
 
@@ -138,7 +138,7 @@ header nav ul li a:hover {
 /* Logotipo */
 .logo {
   display: block;
-  margin: 10px auto;
+  margin: 5px auto;
   /* Centraliza horizontalmente */
   max-width: 75px;
   /* Define um tamanho máximo */
