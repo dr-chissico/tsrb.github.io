@@ -207,7 +207,7 @@ article p {
 
 .noticia {
   display: inline;
-  align-self: flex;
+  /*align-self: flex; */
   margin-bottom: 20px;
 }
 
