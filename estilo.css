@@ -14,7 +14,7 @@
     height: 200px; /* Fix the height of the carousel images */
     object-fit: cover; /* Ensure the images cover the area without distortion */
     max-width: 300px;
-    margin: 0 0 0 0;
+    margin: 0 auto; /* Center the carousel */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -73,7 +73,7 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 0 0 0;
+    /* margin: 0 auto; Center the container */;
 }
 
 /* Header */
