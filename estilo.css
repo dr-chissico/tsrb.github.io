@@ -52,18 +52,17 @@
 
 .carousel-control {
     position: absolute;
-    top: 25%;
+    top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
     font-size: 2rem;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     z-index: 10;
     transition: background-color 0.3s ease;
-    width: auto;
-    height: auto;
+    margin: 0 auto;
 }
 
 .carousel-control:hover {
