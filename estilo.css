@@ -58,7 +58,7 @@
   top: 50%;
   transform: translateY(-50%);
   /*background-color: rgba(1, 0, 0, 0.5); */
-  color: #blue;
+  color: blue;
   border: none;
   font-size: 1rem;
   padding: 0px;
@@ -74,10 +74,12 @@
 
 .carousel-control.prev {
   left: 0px;
+  color: red;
 }
 
 .carousel-control.next {
   right: 0px;
+  color: blue;
 }
 
 body {
