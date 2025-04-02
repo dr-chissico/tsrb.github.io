@@ -128,7 +128,7 @@ header nav ul li a:hover {
 /* Logotipo */
 .logo {
     display: block;
-    margin: 20px auto; /* Centraliza horizontalmente */
+    margin: 10px auto; /* Centraliza horizontalmente */
     max-width: 75px; /* Define um tamanho máximo */
     height: auto; /* Mantém a proporção */
 }
