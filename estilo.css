@@ -88,7 +88,7 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto; /* Center the container */;
+    margin: 0 auto 5px 0; /* Center the container */;
 }
 
 /* Header */
