@@ -88,14 +88,14 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto 5px 0; /* Center the container */;
+    margin: 0 auto 0px 0; /* Center the container */;
 }
 
 /* Header */
 header {
     background-color: #333; /* Dark gray */
     color: #fff; /* White text */
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 header h1 {
