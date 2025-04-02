@@ -185,7 +185,7 @@ article p {
 }
 
 .noticia {
-    display: flex;
+    display: inline-flex;
     align-items: end;
     margin-bottom: 20px;
 }
