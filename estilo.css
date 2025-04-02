@@ -129,7 +129,7 @@ header nav ul li a:hover {
 .logo {
     display: block;
     margin: 20px auto; /* Centraliza horizontalmente */
-    max-width: 150px; /* Define um tamanho máximo */
+    max-width: 50px; /* Define um tamanho máximo */
     height: auto; /* Mantém a proporção */
 }
 
