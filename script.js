@@ -1,5 +1,3 @@
-// filepath: c:/wamp64/www/Tribunal_Superior_de_Recurso/script.js
-
 // Wait for the DOM to fully load
 document.addEventListener("DOMContentLoaded", () => {
     // Smooth scrolling for navigation links
