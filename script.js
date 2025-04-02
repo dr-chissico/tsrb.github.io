@@ -15,11 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Array de URLs das imagens do carrossel
     const imagens = [
-        'imagens/Imagem 1.jpg',
-        'imagens/Imagem 2.jpg',
         'imagens/Imagem 3.jpg',
-        'imagens/Imagem 4.jpg',
-        'imagens/Imagem 5.jpg'
+        'imagens/Imagem 4.jpg'
     ];
 
     let indiceAtual = 0;
