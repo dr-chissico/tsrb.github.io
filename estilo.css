@@ -15,7 +15,7 @@
   /* Fix the height of the carousel images */
   object-fit: cover;
   /* Ensure the images cover the area without distortion */
-  max-width: auto;
+  max-width: 480px;
   margin: 0 auto;
   /*Center the carousel */
   border-radius: 10px;
