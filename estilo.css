@@ -1,256 +1,286 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
 }
 
 /* Carousel */
 .carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 200px; /* Fix the height of the carousel images */
-    object-fit: cover; /* Ensure the images cover the area without distortion */
-    max-width: 300px;
-    margin: 0 auto;  /*Center the carousel */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  /* Fix the height of the carousel images */
+  object-fit: cover;
+  /* Ensure the images cover the area without distortion */
+  max-width: 300px;
+  margin: 0 auto;
+  /*Center the carousel */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #carousel {
-    padding: 5px 0px 5px 0px;
-    margin: 0px;
+  padding: 5px 0px 5px 0px;
+  margin: 0px;
 }
 
 .carousel-inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-    display: none;
-    width: 100%;
-    max-width: auto;
-    transition: opacity 0.5s ease-in-out;
+  display: none;
+  width: 100%;
+  max-width: auto;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .carousel-item.active {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 .carousel img {
-    width: 100%;
-    border-radius: 10px;
-    margin: 0 auto;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    font-size: 2rem;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-    margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
 }
 
 .carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-control.prev {
-    left: 10px;
+  left: 10px;
 }
 
 .carousel-control.next {
-    right: 10px;
+  right: 10px;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333; /* Dark gray for text */
-    background-color: #f8f8f8; /* Light cream background */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  /* Dark gray for text */
+  background-color: #f8f8f8;
+  /* Light cream background */
 }
 
 /* Container */
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the container */;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Center the container */;
 }
 
 /* Header */
 header {
-    background-color: #333; /* Dark gray */
-    color: #fff; /* White text */
-    padding: 10px 0;
+  background-color: #333;
+  /* Dark gray */
+  color: #fff;
+  /* White text */
+  padding: 10px 0;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 1rem;
+  text-align: center;
+  font-size: 1rem;
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 header nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 header nav ul li a {
-    color: #fff; /* White links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: #fff;
+  /* White links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #d4af37; /* Gold hover effect */
+  color: #d4af37;
+  /* Gold hover effect */
 }
 
 /* Logotipo */
 .logo {
-    display: block;
-    margin: 10px auto; /* Centraliza horizontalmente */
-    max-width: 75px; /* Define um tamanho máximo */
-    height: auto; /* Mantém a proporção */
+  display: block;
+  margin: 10px auto;
+  /* Centraliza horizontalmente */
+  max-width: 75px;
+  /* Define um tamanho máximo */
+  height: auto;
+  /* Mantém a proporção */
 }
 
 /* Sections */
 .section {
-    padding: 40px 0;
-    background-color: #fff; /* White background for sections */
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px 0;
+  background-color: #fff;
+  /* White background for sections */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .section:nth-child(even) {
-    background-color: #f0f0f0; /* Light gray for alternating sections */
+  background-color: #f0f0f0;
+  /* Light gray for alternating sections */
 }
 
 .section h2 {
-    text-align: center;
-    color: #333; /* Dark gray */
-    margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  /* Dark gray */
+  margin-bottom: 20px;
 }
 
 .section p, .section ul {
-    text-align: justify;
-    color: #555; /* Medium gray for text */
+  text-align: justify;
+  color: #555;
+  /* Medium gray for text */
 }
 
 .section ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .section ul li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 /* Articles */
 article {
-    margin-bottom: 5px;
-    padding: 15px;
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 5px;
-    background-color: #fff; /* White background */
+  margin-bottom: 5px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  /* Light gray border */
+  border-radius: 5px;
+  background-color: #fff;
+  /* White background */
 }
 
 article h3 {
-    color: #333; /* Dark gray */
-    margin-bottom: 10px;
+  color: #333;
+  /* Dark gray */
+  margin-bottom: 10px;
 }
 
 article p {
-    color: #555; /* Medium gray */
+  color: #555;
+  /* Medium gray */
 }
 
 .noticia {
-    display: inline-flex;
-    align-items: end;
-    margin-bottom: 20px;
+  display: inline-flex;
+  align-self: flex;
+  margin-bottom: 20px;
 }
 
 .noticia img {
-    max-width: 150px;
-    margin-top: 15px;
-    border-radius: 5px;
+  max-width: 150px;
+  margin-top: 15px;
+  border-radius: 5px;
 }
 
 .noticia div {
-    flex: 1;
-} 
+  flex: 1;
+}
 
 /* Form */
 form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff; /* White background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333; /* Dark gray */
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  /* Dark gray */
 }
 
 form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 5px;
-    font-size: 1rem;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  /* Light gray border */
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 form input:focus, form textarea:focus {
-    border-color: #d4af37; /* Gold focus effect */
-    outline: none;
+  border-color: #d4af37;
+  /* Gold focus effect */
+  outline: none;
 }
 
 form button {
-    background-color: #333; /* Dark gray */
-    color: #fff; /* White text */
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #333;
+  /* Dark gray */
+  color: #fff;
+  /* White text */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #d4af37; /* Gold hover effect */
+  background-color: #d4af37;
+  /* Gold hover effect */
 }
 
 /* Footer */
 footer {
-    background-color: #333; /* Dark gray */
-    color: #fff; /* White text */
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+  background-color: #333;
+  /* Dark gray */
+  color: #fff;
+  /* White text */
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
 }
 
 footer p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
