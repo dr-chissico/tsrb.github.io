@@ -168,7 +168,7 @@ header nav ul li a:hover {
 
 /* Articles */
 article {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 15px;
     border: 1px solid #ddd; /* Light gray border */
     border-radius: 5px;
