@@ -52,7 +52,7 @@
 
 .carousel-control {
     position: absolute;
-    top: 50%;
+    top: 25%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
