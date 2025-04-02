@@ -212,7 +212,7 @@ article p {
 }
 
 .noticia img {
-  max-width: 150px;
+  max-width: auto;
   margin-top: 15px;
   border-radius: 5px;
 }
