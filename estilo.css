@@ -64,12 +64,12 @@
   padding: 0px;
   cursor: pointer;
   z-index: 10;
-  transition: background-color 0.3s ease;
+  /*transition: background-color 0.3s ease; */
   margin: 0 0;
 }
 
 .carousel-control:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  /*background-color: rgba(0, 0, 0, 0.8); */
 }
 
 .carousel-control.prev {
