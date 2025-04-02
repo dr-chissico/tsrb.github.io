@@ -62,8 +62,8 @@
     cursor: pointer;
     z-index: 10;
     transition: background-color 0.3s ease;
-    width: 25px;
-    height: 25px;
+    width: auto;
+    height: auto;
 }
 
 .carousel-control:hover {
