@@ -186,7 +186,7 @@ article p {
 
 .noticia {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     margin-bottom: 20px;
 }
 
@@ -195,10 +195,10 @@ article p {
     margin-top: 15px;
     border-radius: 5px;
 }
-/*
+
 .noticia div {
     flex: 1;
-} */
+} 
 
 /* Form */
 form {
