@@ -4,11 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll("header nav ul li a");
     navLinks.forEach(link => {
       link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: "smooth" });
+        // Se o link for interno (inicia com #) realiza o scroll suave
+        if(link.getAttribute("href").startsWith("#")) {
+          e.preventDefault();
+          const targetId = link.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
         }
       });
     });
@@ -23,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevButton = document.querySelector('.carousel-control.prev');
     const nextButton = document.querySelector('.carousel-control.next');
   
-    // Carrega as imagens no carrossel
     function carregarImagens() {
       imagens.forEach((src, index) => {
         const img = document.createElement('img');
@@ -57,10 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
     carregarImagens();
   
-    // Troca de slide automático a cada 5 segundos
     setInterval(proximoSlide, 5000);
   
-    /* Validação e Segurança do Formulário */
+    /* Validação e Sanitização do Formulário */
     const contactForm = document.querySelector("form");
     if (contactForm) {
       contactForm.addEventListener("submit", (e) => {
@@ -79,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
         
-        // Simulação de envio
         alert("Mensagem enviada com sucesso!");
         contactForm.reset();
       });
@@ -90,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return emailRegex.test(email);
     }
   
-    // Sanitização simples para evitar XSS
     function sanitizeInput(input) {
       const tempDiv = document.createElement("div");
       tempDiv.textContent = input;
