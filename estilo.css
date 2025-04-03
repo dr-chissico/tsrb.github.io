@@ -1,10 +1,11 @@
-/* Reset e configurações globais */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Tipografia e corpo */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -12,13 +13,14 @@ body {
   background-color: #f8f8f8;
 }
 
+/* Container centralizado */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Header e Menu */
+/* Header e Menu de Navegação */
 header {
   background-color: #333;
   color: #fff;
@@ -46,10 +48,6 @@ header nav ul {
   margin-top: 10px;
 }
 
-header nav ul li {
-  position: relative;
-}
-
 header nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -60,42 +58,6 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a:focus {
   color: #d4af37;
-}
-
-/* Submenus */
-header nav ul li .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
-  padding: 10px 0;
-  border-radius: 4px;
-  min-width: 150px;
-  z-index: 100;
-}
-
-header nav ul li:hover > .submenu,
-header nav ul li:focus-within > .submenu {
-  display: block;
-}
-
-header nav ul li .submenu li {
-  margin: 0;
-  padding: 0;
-}
-
-header nav ul li .submenu li a {
-  padding: 8px 15px;
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-header nav ul li .submenu li a:hover,
-header nav ul li .submenu li a:focus {
-  background-color: #444;
 }
 
 /* Logotipo */
@@ -134,7 +96,7 @@ header nav ul li .submenu li a:focus {
   list-style: none;
 }
 
-/* Layout de Notícias em Duas Colunas */
+/* Layout de Notícias: duas colunas */
 .news-container {
   display: flex;
   gap: 20px;
@@ -142,7 +104,7 @@ header nav ul li .submenu li a:focus {
 }
 
 .news-sidebar {
-  flex: 1; /* Aproximadamente 1/4 da largura */
+  flex: 1; /* 1/4 da largura aproximada */
 }
 
 .news-sidebar h3 {
@@ -165,22 +127,28 @@ header nav ul li .submenu li a:focus {
   color: #333;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: color 0.3s;
 }
 
 .news-sidebar ul li a:hover,
 .news-sidebar ul li a:focus {
-  background-color: #d4af37;
-  color: #fff;
+  color: #d4af37;
 }
 
 .news-content {
-  flex: 3; /* Aproximadamente 3/4 da largura */
+  flex: 3; /* 3/4 da largura */
 }
 
+/* Reduz o tamanho das imagens das notícias */
+article.noticia img {
+  width: 100%;
+  max-height: 200px; /* Reduzido para 200px */
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Ajustes gerais para artigos de notícia */
 article.noticia {
   margin-bottom: 20px;
   padding: 15px;
@@ -192,18 +160,11 @@ article.noticia {
   gap: 10px;
 }
 
-article.noticia img {
-  width: 100%;
-  max-height: 200px; /* Reduzido para 200px */
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
 article.noticia div {
   text-align: justify;
   color: #555;
 }
+
 
 /* Formulário */
 form {
@@ -304,6 +265,31 @@ form button:focus {
   color: blue;
 }
 
+/* Downloads - Menu de Documentos */
+#downloads ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+#downloads ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#downloads ul li a:hover,
+#downloads ul li a:focus {
+  background-color: #d4af37;
+  color: #fff;
+}
+
 /* Footer */
 footer {
   background-color: #333;
@@ -315,18 +301,11 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* Responsividade */
+/* Media Queries para Responsividade */
 @media (max-width: 768px) {
   header nav ul {
     flex-direction: column;
     gap: 10px;
-  }
-  .news-container {
-    flex-direction: column;
-  }
-  .news-sidebar,
-  .news-content {
-    flex: 1;
   }
   .section {
     padding: 20px 0;

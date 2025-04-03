@@ -15,30 +15,9 @@
       <h1>Tribunal Superior de Recurso</h1>
       <nav>
         <ul>
-          <li>
-            <a href="#sobre">Sobre</a>
-            <ul class="submenu">
-              <li><a href="sobre-historia.html">História</a></li>
-              <li><a href="sobre-missao.html">Missão e Visão</a></li>
-              <li><a href="sobre-equipe.html">Equipe</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#servicos">Serviços</a>
-            <ul class="submenu">
-              <li><a href="servicos-consulta.html">Consulta de Processos</a></li>
-              <li><a href="servicos-audiencias.html">Agendamento de Audiências</a></li>
-              <li><a href="servicos-certidoes.html">Emissão de Certidões</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#noticias">Notícias</a>
-            <ul class="submenu">
-              <li><a href="noticias-ultimas.html">Últimas Notícias</a></li>
-              <li><a href="noticias-destaques.html">Destaques</a></li>
-              <li><a href="noticias-eventos.html">Eventos</a></li>
-            </ul>
-          </li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#noticias">Notícias</a></li>
           <li><a href="#downloads">Downloads</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -50,7 +29,7 @@
   <section id="carousel" class="section">
     <div class="container">
       <div class="carousel" id="carousel-container">
-        <!-- Imagens carregadas dinamicamente via JavaScript -->
+        <!-- As imagens serão carregadas dinamicamente via JavaScript -->
       </div>
       <button class="carousel-control prev" onclick="prevSlide()" aria-label="Slide anterior">&#10094;</button>
       <button class="carousel-control next" onclick="nextSlide()" aria-label="Próximo slide">&#10095;</button>
@@ -58,43 +37,67 @@
   </section>
 
   <main>
-    <!-- Seção de notícias com layout em duas colunas -->
-    <section id="noticias" class="section">
-      <div class="container news-container">
-        <aside class="news-sidebar">
-          <h3>Notícias Recentes</h3>
-          <ul>
-            <li><a href="#noticia1">Falta de Recursos Humanos</a></li>
-            <li><a href="#noticia2">Irregularidades na Lei</a></li>
-            <li><a href="#noticia3">Inauguração do Tribunal</a></li>
-          </ul>
-        </aside>
-        <div class="news-content">
-          <article id="noticia1" class="noticia">
-            <img src="imagens/recursos_humanos.jpg" alt="Recursos Humanos no Tribunal">
-            <div>
-              <h3>Há falta de recursos humanos na Beira</h3>
-              <p>O presidente do Tribunal da Beira comenta sobre a carência de magistrados...</p>
-            </div>
-          </article>
-          <article id="noticia2" class="noticia">
-            <img src="imagens/irregularidades_lei.jpg" alt="Irregularidades na Lei">
-            <div>
-              <h3>Irregularidades no Cumprimento da Lei</h3>
-              <p>Jurista denuncia problemas na implementação da lei que cria os Tribunais Superiores...</p>
-            </div>
-          </article>
-          <article id="noticia3" class="noticia">
-            <img src="imagens/inauguracao_beira.jpeg" alt="Inauguração do Tribunal na Beira">
-            <div>
-              <h3>Inauguração do Tribunal da Beira</h3>
-              <p>O Presidente da República inaugura hoje o Tribunal na Beira...</p>
-            </div>
-          </article>
-        </div>
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre o Tribunal</h2>
+        <p>
+          O Tribunal Superior de Recurso é a instância máxima do Poder Judiciário que julga recursos interpostos contra decisões dos tribunais de instância inferior, garantindo uma interpretação uniforme das leis.
+        </p>
       </div>
     </section>
 
+    <section id="servicos" class="section">
+      <div class="container">
+        <h2>Serviços</h2>
+        <ul>
+          <li>Consulta de processos</li>
+          <li>Agendamento de audiências</li>
+          <li>Emissão de certidões</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="noticias" class="section">
+        <div class="container news-container">
+          <!-- Sidebar com links para as notícias -->
+          <aside class="news-sidebar">
+            <h3>Notícias Recentes</h3>
+            <ul>
+              <li><a href="#noticia1">Falta de Recursos Humanos</a></li>
+              <li><a href="#noticia2">Irregularidades na Lei</a></li>
+              <li><a href="#noticia3">Inauguração do Tribunal</a></li>
+            </ul>
+          </aside>
+      
+          <!-- Área principal de notícias -->
+          <div class="news-content">
+            <article id="noticia1" class="noticia">
+              <img src="imagens/recursos_humanos.jpg" alt="Recursos Humanos no Tribunal">
+              <div>
+                <h3>Há falta de recursos humanos na Beira</h3>
+                <p>O presidente do Tribunal da Beira comenta sobre a carência de magistrados...</p>
+              </div>
+            </article>
+            <article id="noticia2" class="noticia">
+              <img src="imagens/irregularidades_lei.jpg" alt="Irregularidades na Lei">
+              <div>
+                <h3>Irregularidades no Cumprimento da Lei</h3>
+                <p>Jurista denuncia problemas na implementação da lei que cria os Tribunais Superiores...</p>
+              </div>
+            </article>
+            <article id="noticia3" class="noticia">
+              <img src="imagens/inauguracao_beira.jpeg" alt="Inauguração do Tribunal na Beira">
+              <div>
+                <h3>Inauguração do Tribunal da Beira</h3>
+                <p>O Presidente da República inaugura hoje o Tribunal na Beira, marcando uma nova fase...</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Seção de Downloads -->
     <section id="downloads" class="section">
       <div class="container">
         <h2>Downloads</h2>
