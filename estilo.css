@@ -1,289 +1,261 @@
-/* General Reset */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
-  position: relative;
   box-sizing: border-box;
 }
 
-/* Carousel */
-.carousel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 0,75em;
-  /* Fix the height of the carousel images */
-  object-fit: cover;
-  /* Ensure the images cover the area without distortion */
-  max-width: 480px;
-  margin: 0 auto;
-  /*Center the carousel */
-  border-radius: 10px;
-  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-}
-
-#carousel {
-  padding: 5px auto 5px auto;
-  margin: 0px;
-}
-
-.carousel-inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  display: none;
-  width: 100%;
-  max-width: auto;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.carousel-item.active {
-  display: block;
-  opacity: 1;
-}
-
-.carousel img {
-  width: 100%;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
- /* transform: translateY(-50%);
-  background-color: rgba(1, 0, 0, 0.5); */
-  color: blue;
-  border: none;
-  font-size: 2rem;
-  padding: 0 0;
-  cursor: pointer;
-  z-index: 10;
-  /*transition: background-color 0.3s ease; */
-  margin: 0 0;
-}
-
-.carousel-control:hover {
-  /*background-color: rgba(0, 0, 0, 0.8); */
-}
-
-.carousel-control.prev {
-  left: 0px;
-  color: red;
-}
-
-.carousel-control.next {
-  right: 0px;
-  color: blue;
-}
-
+/* Tipografia e corpo */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  /* Dark gray for text */
   background-color: #f8f8f8;
-  /* Light cream background */
 }
 
-/* Container */
+/* Container centralizado */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  /* Center the container */;
 }
 
-/* Header */
+/* Header e Menu de Navegação */
 header {
   background-color: #333;
-  /* Dark gray */
   color: #fff;
-  /* White text */
   padding: 10px 0;
 }
 
-header h1 {
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  font-size: 1rem;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  margin: 5px 0;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 15px;
   margin-top: 10px;
-}
-
-header nav ul li {
-  margin: 0 15px;
 }
 
 header nav ul li a {
   color: #fff;
-  /* White links */
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover,
+header nav ul li a:focus {
   color: #d4af37;
-  /* Gold hover effect */
 }
 
 /* Logotipo */
 .logo {
-  display: block;
-  margin: 5px auto;
-  /* Centraliza horizontalmente */
   max-width: 75px;
-  /* Define um tamanho máximo */
   height: auto;
-  /* Mantém a proporção */
+  margin-bottom: 5px;
 }
 
-/* Sections */
+/* Seções Gerais */
 .section {
   padding: 40px 0;
   background-color: #fff;
-  /* White background for sections */
   margin-bottom: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.section:nth-child(even) {
+.section:nth-of-type(even) {
   background-color: #f0f0f0;
-  /* Light gray for alternating sections */
 }
 
 .section h2 {
   text-align: center;
-  color: #333;
-  /* Dark gray */
   margin-bottom: 20px;
+  color: #333;
 }
 
-.section p, .section ul {
+.section p,
+.section ul {
   text-align: justify;
   color: #555;
-  /* Medium gray for text */
 }
 
 .section ul {
   list-style: none;
-  padding: 0;
 }
 
-.section ul li {
-  margin: 10px 0;
-}
-
-/* Articles */
-article {
-  margin-bottom: 5px;
+/* Artigos e Notícias */
+article.noticia {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
   padding: 15px;
   border: 1px solid #ddd;
-  /* Light gray border */
   border-radius: 5px;
-  background-color: #fff;
-  /* White background */
 }
 
-article h3 {
-  color: #333;
-  /* Dark gray */
-  margin-bottom: 10px;
-}
-
-article p {
-  color: #555;
-  /* Medium gray */
-}
-
-.noticia {
-  display: inline-block;
-  /*align-self: flex; */
-  margin-bottom: 20px;
-}
-
-.noticia img {
+article.noticia img {
   width: 100%;
-  height: 25vh;
-  margin-top: 15px;
+  height: auto;
   border-radius: 5px;
 }
 
-.noticia div {
-  flex: 1;
-}
-
-/* Form */
+/* Formulário */
 form {
   max-width: 600px;
   margin: 0 auto;
   background-color: #fff;
-  /* White background */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 form label {
   display: block;
   margin-bottom: 5px;
   color: #333;
-  /* Dark gray */
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
-  /* Light gray border */
   border-radius: 5px;
   font-size: 1rem;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   border-color: #d4af37;
-  /* Gold focus effect */
   outline: none;
 }
 
 form button {
   background-color: #333;
-  /* Dark gray */
   color: #fff;
-  /* White text */
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-form button:hover {
+form button:hover,
+form button:focus {
   background-color: #d4af37;
-  /* Gold hover effect */
+}
+
+/* Carrossel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Botões do Carrossel */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 5px;
+}
+
+.carousel-control.prev {
+  left: 10px;
+  color: red;
+}
+
+.carousel-control.next {
+  right: 10px;
+  color: blue;
+}
+
+/* Downloads - Menu de Documentos */
+#downloads ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+#downloads ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#downloads ul li a:hover,
+#downloads ul li a:focus {
+  background-color: #d4af37;
+  color: #fff;
 }
 
 /* Footer */
 footer {
   background-color: #333;
-  /* Dark gray */
   color: #fff;
-  /* White text */
   text-align: center;
   padding: 20px 0;
-  margin-top: 20px;
 }
-
 footer p {
   font-size: 0.9rem;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section {
+    padding: 20px 0;
+  }
 }

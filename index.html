@@ -1,120 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página oficial do Tribunal Superior de Recurso">
-    <meta name="author" content="Tribunal Superior de Recurso">
-    <title>Tribunal Superior de Recurso</title>
-    <link rel="stylesheet" href="estilo.css"> <!-- Atualizado para referenciar estilo.css -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página oficial do Tribunal Superior de Recurso">
+  <meta name="author" content="Tribunal Superior de Recurso">
+  <title>Tribunal Superior de Recurso</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="imagens/logo.png" alt="Logotipo do Tribunal Superior de Recurso" class="logo">
-            <h1>Tribunal Superior de Recurso</h1> 
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#noticias">Notícias</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container header-container">
+      <img src="imagens/logo.png" alt="Logotipo do Tribunal Superior de Recurso" class="logo">
+      <h1>Tribunal Superior de Recurso</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#downloads">Downloads</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Carrossel de Fotos -->
-    <section id="carousel" class="section">
-        <div class="container">
-            <div class="carousel" id="caro"> <!-- Corrigido o ID para "carousel" -->
-            <!-- As imagens serão carregadas dinamicamente via JavaScript -->
-            </div>
-            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-        </div>
-        
+  <!-- Carrossel de Imagens -->
+  <section id="carousel" class="section">
+    <div class="container">
+      <div class="carousel" id="carousel-container">
+        <!-- As imagens serão carregadas dinamicamente via JavaScript -->
+      </div>
+      <button class="carousel-control prev" onclick="prevSlide()" aria-label="Slide anterior">&#10094;</button>
+      <button class="carousel-control next" onclick="nextSlide()" aria-label="Próximo slide">&#10095;</button>
+    </div>
+  </section>
+
+  <main>
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre o Tribunal</h2>
+        <p>
+          O Tribunal Superior de Recurso é a instância máxima do Poder Judiciário que julga recursos interpostos contra decisões dos tribunais de instância inferior, garantindo uma interpretação uniforme das leis.
+        </p>
+      </div>
     </section>
 
-    <main>
-        <section id="sobre" class="section">
-            <div class="container">
-                <h2>Sobre o Tribunal</h2>
-                <p>
-                    O Tribunal Superior de Recurso é a instância máxima do Poder Judiciário em que se julgam os recursos interpostos contra decisões proferidas pelos tribunais de instância inferior. Em outras palavras, é o órgão judicial responsável por revisar e uniformizar a interpretação das leis, garantindo que a aplicação do direito seja consistente em todo o sistema judiciário. Suas decisões são, via de regra, finais e têm efeito vinculante para os demais tribunais.
-                </p>
-                <p>
-                    A estrutura e competência dos tribunais superiores variam de acordo com a legislação de cada país. Por exemplo, em alguns ordenamentos jurídicos, como o de Moçambique, a "Lei Nº 11" criou o Tribunal Superior de Recurso para atuar em todo o território nacional e substituir a antiga estrutura de tribunais de relação, concentrando a análise dos recursos em uma única corte de última instância.
-                </p>
-                <p>
-                    Essa corte geralmente não reexamina os fatos do processo, limitando-se à análise das questões de direito envolvidas, o que assegura uma interpretação uniforme da legislação e contribui para a segurança jurídica.
-                </p>
-            </div>
-        </section>
+    <section id="servicos" class="section">
+      <div class="container">
+        <h2>Serviços</h2>
+        <ul>
+          <li>Consulta de processos</li>
+          <li>Agendamento de audiências</li>
+          <li>Emissão de certidões</li>
+        </ul>
+      </div>
+    </section>
 
-        <section id="servicos" class="section">
-            <div class="container">
-                <h2>Serviços</h2>
-                <ul>
-                    <li>Consulta de processos</li>
-                    <li>Agendamento de audiências</li>
-                    <li>Emissão de certidões</li>
-                </ul>
-            </div>
-        </section>
+    <section id="noticias" class="section">
+      <div class="container">
+        <h2>Notícias</h2>
+        <article class="noticia">
+          <img src="imagens/recursos_humanos.jpg" alt="Recursos Humanos no Tribunal">
+          <div>
+            <h3>Falta de Recursos Humanos na Beira</h3>
+            <p>O presidente do Tribunal da Beira comenta sobre a carência de magistrados, destacando que o número ideal é de 12, mas atualmente conta com menos.</p>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="imagens/irregularidades_lei.jpg" alt="Irregularidades na Lei">
+          <div>
+            <h3>Irregularidades no Cumprimento da Lei</h3>
+            <p>Jurista denuncia problemas na implementação da lei que cria os Tribunais Superiores de Recurso, apontando inconsistências graves.</p>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="imagens/inauguracao_beira.jpeg" alt="Inauguração do Tribunal na Beira">
+          <div>
+            <h3>Inauguração do Tribunal da Beira</h3>
+            <p>O presidente da República inaugura hoje o Tribunal na Beira, marcando uma nova fase na administração da justiça regional.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <section id="noticias" class="section">
-            <div class="container">
-                <h2>Notícias</h2>
-                <article class="noticia">
-                    <img src="imagens/recursos_humanos.jpg" alt="Recursos Humanos no Tribunal Superior de Recurso">
-                    <div>
-                        <h3>Há falta de recursos humanos no Tribunal Superior de Recurso da Beira</h3>
-                        <p>O presidente do Tribunal Superior de Recurso da Beira, Fernando Panti, diz que os recursos humanos da instituição estão aquém do desejado. Panti explica que o Tribunal conta com cinco magistrados, tendo sido eleitos mais quatro, mas o número desejado é de, pelo menos, 12.</p>
-                    </div>
-                </article>
-                <article class="noticia">
-                    <img src="imagens/irregularidades_lei.jpg" alt="Irregularidades na Lei dos Tribunais Superiores de Recurso">
-                    <div>
-                        <h3>Jurista denuncia irregularidades no cumprimento da lei que cria Tribunais Superiores de Recurso</h3>
-                        <p>O Mestre em Ciências Jurídicas e Assistente da Faculdade de Direito da Universidade Eduardo Mondlane, Stayleir Marroquim, denuncia irregularidades graves decorrentes do cumprimento da lei que cria os Tribunais Superiores de Recurso (TSR).</p>
-                    </div>
-                </article>
-                <article class="noticia">
-                    <img src="imagens/inauguracao_beira.jpeg" alt="Inauguração do Tribunal Superior de Recurso da Beira">
-                    <div>
-                        <h3>Tribunal Superior de Recurso da Beira inaugurado hoje</h3>
-                        <p>O Presidente da República, Filipe Nyusi, vai inaugurar hoje o Tribunal Superior de Recurso da Beira, no quadro da sua visita de trabalho à província de Sofala que inicia hoje e termina amanhã.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
+    <!-- Seção de Downloads -->
+    <section id="downloads" class="section">
+      <div class="container">
+        <h2>Downloads</h2>
+        <ul>
+          <li><a href="documentos/guia_usuarios.pdf" download>Guia do Usuário - PDF</a></li>
+          <li><a href="documentos/relatorio_atividades.docx" download>Relatório de Atividades - DOCX</a></li>
+          <li><a href="documentos/legislacao.pdf" download>Legislação Aplicável - PDF</a></li>
+        </ul>
+      </div>
+    </section>
 
-        <section id="contato" class="section">
-            <div class="container">
-                <h2>Contato</h2>
-                <form action="submit_form.php" method="post">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                    
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                    
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <form action="submit_form.php" method="post" novalidate>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Tribunal Superior de Recurso. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tribunal Superior de Recurso. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script> <!-- Adicionado para referenciar script.js -->
+  <script src="script.js"></script>
 </body>
 </html>
