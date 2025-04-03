@@ -139,13 +139,14 @@ header nav ul li a:focus {
   flex: 3; /* 3/4 da largura */
 }
 
-/* Reduz o tamanho das imagens das notícias */
+/* Ajusta o tamanho das imagens das notícias para boa apresentação em todas as telas */
 article.noticia img {
   width: 100%;
-  max-height: 200px; /* Reduzido para 200px */
+  max-height: 300px; /* Ajustado para 300px para melhor visibilidade */
   object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  border-radius: 8px; /* Bordas mais suaves */
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
 }
 
 /* Ajustes gerais para artigos de notícia */
