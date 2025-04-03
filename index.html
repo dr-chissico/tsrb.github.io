@@ -58,31 +58,44 @@
     </section>
 
     <section id="noticias" class="section">
-      <div class="container">
-        <h2>Notícias</h2>
-        <article class="noticia">
-          <img src="imagens/recursos_humanos.jpg" alt="Recursos Humanos no Tribunal">
-          <div>
-            <h3>Falta de Recursos Humanos na Beira</h3>
-            <p>O presidente do Tribunal da Beira comenta sobre a carência de magistrados, destacando que o número ideal é de 12, mas atualmente conta com menos.</p>
+        <div class="container news-container">
+          <!-- Sidebar com links para as notícias -->
+          <aside class="news-sidebar">
+            <h3>Notícias Recentes</h3>
+            <ul>
+              <li><a href="#noticia1">Falta de Recursos Humanos</a></li>
+              <li><a href="#noticia2">Irregularidades na Lei</a></li>
+              <li><a href="#noticia3">Inauguração do Tribunal</a></li>
+            </ul>
+          </aside>
+      
+          <!-- Área principal de notícias -->
+          <div class="news-content">
+            <article id="noticia1" class="noticia">
+              <img src="imagens/recursos_humanos.jpg" alt="Recursos Humanos no Tribunal">
+              <div>
+                <h3>Há falta de recursos humanos na Beira</h3>
+                <p>O presidente do Tribunal da Beira comenta sobre a carência de magistrados...</p>
+              </div>
+            </article>
+            <article id="noticia2" class="noticia">
+              <img src="imagens/irregularidades_lei.jpg" alt="Irregularidades na Lei">
+              <div>
+                <h3>Irregularidades no Cumprimento da Lei</h3>
+                <p>Jurista denuncia problemas na implementação da lei que cria os Tribunais Superiores...</p>
+              </div>
+            </article>
+            <article id="noticia3" class="noticia">
+              <img src="imagens/inauguracao_beira.jpeg" alt="Inauguração do Tribunal na Beira">
+              <div>
+                <h3>Inauguração do Tribunal da Beira</h3>
+                <p>O Presidente da República inaugura hoje o Tribunal na Beira, marcando uma nova fase...</p>
+              </div>
+            </article>
           </div>
-        </article>
-        <article class="noticia">
-          <img src="imagens/irregularidades_lei.jpg" alt="Irregularidades na Lei">
-          <div>
-            <h3>Irregularidades no Cumprimento da Lei</h3>
-            <p>Jurista denuncia problemas na implementação da lei que cria os Tribunais Superiores de Recurso, apontando inconsistências graves.</p>
-          </div>
-        </article>
-        <article class="noticia">
-          <img src="imagens/inauguracao_beira.jpeg" alt="Inauguração do Tribunal na Beira">
-          <div>
-            <h3>Inauguração do Tribunal da Beira</h3>
-            <p>O presidente da República inaugura hoje o Tribunal na Beira, marcando uma nova fase na administração da justiça regional.</p>
-          </div>
-        </article>
-      </div>
-    </section>
+        </div>
+      </section>
+      
 
     <!-- Seção de Downloads -->
     <section id="downloads" class="section">

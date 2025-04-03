@@ -96,23 +96,75 @@ header nav ul li a:focus {
   list-style: none;
 }
 
-/* Artigos e Notícias */
-article.noticia {
+/* Layout de Notícias: duas colunas */
+.news-container {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.news-sidebar {
+  flex: 1; /* 1/4 da largura aproximada */
+}
+
+.news-sidebar h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #333;
+}
+
+.news-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-sidebar ul li {
+  margin: 10px 0;
+}
+
+.news-sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.news-sidebar ul li a:hover,
+.news-sidebar ul li a:focus {
+  color: #d4af37;
+}
+
+.news-content {
+  flex: 3; /* 3/4 da largura */
+}
+
+/* Reduz o tamanho das imagens das notícias */
+article.noticia img {
+  width: 100%;
+  max-height: 200px; /* Reduzido para 200px */
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Ajustes gerais para artigos de notícia */
+article.noticia {
   margin-bottom: 20px;
-  background-color: #fff;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-article.noticia img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+article.noticia div {
+  text-align: justify;
+  color: #555;
 }
+
 
 /* Formulário */
 form {
