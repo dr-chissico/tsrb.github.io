@@ -227,7 +227,7 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  header nav ul {
+   header nav ul {
     flex-direction: column;
     align-items: center;
   }
